@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="x14nmall-user" />
+        <module name="x14nmall-common-database" />
+        <module name="x14nmall-api-product" />
+        <module name="x14nmall-gateway" />
+        <module name="x14nmall-api-auth" />
+        <module name="x14nmall-auth" />
+        <module name="x14nmall-product" />
+        <module name="x14nmall-common-order" />
+        <module name="x14nmall-order" />
+        <module name="x14nmall-common-cache" />
+        <module name="x14nmall-common-security" />
+        <module name="x14nmall-common-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="x14nmall-core" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
