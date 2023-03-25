@@ -55,7 +55,6 @@
             <artifactId>x14nmall-api-product</artifactId>
             <version>${project.version}</version>
         </dependency>
-<<<<<<< HEAD
 
         <dependency>
             <groupId>com.x14nmall.cloud</groupId>
@@ -68,8 +67,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-=======
->>>>>>> develop
+
     </dependencies>
 
 
