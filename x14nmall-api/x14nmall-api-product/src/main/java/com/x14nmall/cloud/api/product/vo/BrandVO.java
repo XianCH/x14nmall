@@ -1,7 +1,7 @@
 package com.x14nmall.cloud.api.product.vo;
 
 
-import com.x14nmall.cloud.common.model.BaseModel;
+import  com.x14nmall.cloud.common.model.BaseModel;
 import com.x14nmall.cloud.common.vo.BaseVO;
 import io.swagger.annotations.ApiModelProperty;
 
