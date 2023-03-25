@@ -1,20 +1,12 @@
 package com.x14nmall.cloud.api.product.vo;
 
 
-<<<<<<< HEAD
+
 import com.x14nmall.cloud.common.core.vo.BaseVO;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.util.List;
-=======
-import com.x14nmall.cloud.common.model.BaseModel;
-import com.x14nmall.cloud.common.vo.BaseVO;
-import io.swagger.annotations.ApiModelProperty;
 
-import java.io.Serializable;
-import java.util.List;
-import java.util.Locale;
->>>>>>> develop
 
 public class BrandVO extends BaseVO{
     private static final long serialVersionUID = 1L;
