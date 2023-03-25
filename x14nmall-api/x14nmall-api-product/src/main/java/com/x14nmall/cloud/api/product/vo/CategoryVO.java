@@ -1,8 +1,16 @@
 package com.x14nmall.cloud.api.product.vo;
 
+<<<<<<< HEAD
 import com.x14nmall.cloud.common.core.vo.BaseVO;
 import io.swagger.annotations.ApiModelProperty;
 
+=======
+import com.x14nmall.cloud.common.vo.BaseVO;
+import io.swagger.annotations.ApiModelProperty;
+
+import java.util.List;
+
+>>>>>>> develop
 public class CategoryVO extends BaseVO {
 
     private static final long serialVersionUID = 1L;

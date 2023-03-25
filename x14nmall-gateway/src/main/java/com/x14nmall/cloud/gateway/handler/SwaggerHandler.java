@@ -10,6 +10,14 @@ import springfox.documentation.swagger.web.*;
 
 import java.util.Optional;
 
+<<<<<<< HEAD
+=======
+/**
+ * swagger-resource
+ * @author fsl
+ * @date 2019-06-0310:47
+ */
+>>>>>>> develop
 @RestController
 public class SwaggerHandler {
 

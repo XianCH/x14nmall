@@ -12,6 +12,9 @@ import java.util.List;
 public interface BrandMapper {
 
     List<BrandVO> list(@Param("brandDTO") BrandDTO brandDTO);
+<<<<<<< HEAD
 
     List<BrandVO> allBrand();
+=======
+>>>>>>> develop
 }

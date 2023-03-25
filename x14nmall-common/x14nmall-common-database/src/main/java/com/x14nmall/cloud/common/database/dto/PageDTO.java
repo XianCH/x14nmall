@@ -1,7 +1,11 @@
 package com.x14nmall.cloud.common.database.dto;
 
 import com.github.pagehelper.IPage;
+<<<<<<< HEAD
 import com.x14nmall.cloud.common.core.util.PrincipalUtil;
+=======
+import com.x14nmall.cloud.common.util.PrincipalUtil;
+>>>>>>> develop
 import io.swagger.annotations.ApiModelProperty;
 
 import javax.validation.constraints.NotNull;

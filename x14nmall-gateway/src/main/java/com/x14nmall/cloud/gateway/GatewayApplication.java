@@ -3,7 +3,14 @@ package com.x14nmall.cloud.gateway;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+<<<<<<< HEAD
 
+=======
+/**
+ * @author FrozenWatermelon
+ * @date 2020/7/23
+ */
+>>>>>>> develop
 @SpringBootApplication(scanBasePackages = {"com.x14nmall.cloud"})
 public class GatewayApplication {
 

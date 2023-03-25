@@ -15,7 +15,15 @@ import springfox.documentation.swagger.web.SwaggerResourcesProvider;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 
+=======
+/***
+ *
+ * @author YXF
+ * @date 2021-01-27 09:10:00
+ */
+>>>>>>> develop
 @Component
 @Primary
 public class SwaggerResourceConfig implements SwaggerResourcesProvider {

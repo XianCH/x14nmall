@@ -6,7 +6,11 @@ import com.x14nmall.cloud.api.auth.vo.TokenInfoVo;
 import com.x14nmall.cloud.auth.dto.AuthenticationDTO;
 import com.x14nmall.cloud.auth.manager.TokenStore;
 import com.x14nmall.cloud.auth.service.AuthAccountService;
+<<<<<<< HEAD
 import com.x14nmall.cloud.common.core.response.ServerResponseEntity;
+=======
+import com.x14nmall.cloud.common.response.ServerResponseEntity;
+>>>>>>> develop
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

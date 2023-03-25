@@ -6,7 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
+<<<<<<< HEAD
 @EnableFeignClients(basePackages = {"com.x14nmall.cloud.api.**.feign"})
+=======
+@EnableFeignClients
+>>>>>>> develop
 @SpringBootApplication(scanBasePackages = "com.x14nmall.cloud")
 public class ProductApplication {
     public static void main(String[] args) {

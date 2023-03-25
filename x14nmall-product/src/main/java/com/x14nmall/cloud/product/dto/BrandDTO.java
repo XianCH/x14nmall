@@ -15,11 +15,19 @@ public class BrandDTO {
     @ApiModelProperty("品牌名称")
     private String brandName;
 
+<<<<<<< HEAD
 //    @NotNull(message = "图片不能为空")
     @ApiModelProperty("品牌图片")
     private String imgUrl;
 
 //    @NotNull(message = "搜索首字母不能为空")
+=======
+    @NotNull(message = "图片不能为空")
+    @ApiModelProperty("品牌图片")
+    private String imgUrl;
+
+    @NotNull(message = "搜索首字母不能为空")
+>>>>>>> develop
     @ApiModelProperty("搜索首字母")
     private String firstLetter;
 

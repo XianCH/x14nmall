@@ -29,7 +29,14 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+<<<<<<< HEAD
 
+=======
+/**
+ * @author FrozenWatermelon
+ * @date 2020/7/4
+ */
+>>>>>>> develop
 @EnableCaching
 @Configuration
 public class RedisCacheConfig {
