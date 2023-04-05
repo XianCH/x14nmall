@@ -9,19 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>x14nmall-api</artifactId>
-    <packaging>pom</packaging>
-    <description>x14nmall内网接口</description>
+    <artifactId>x14nmall-leaf</artifactId>
 
-    <modules>
-        <module>x14nmall-api-auth</module>
-        <module>x14nmall-api-product</module>
-        <module>x14nmall-api-payment</module>
-        <module>x14nmall-api-order</module>
-        <module>x14nmall-api-leaf</module>
-        <module>x14nmall-api-biz</module>
-    </modules>
-
-
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
 </project>

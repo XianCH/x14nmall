@@ -15,6 +15,10 @@
         <module>x14nmall-order</module>
         <module>x14nmall-user</module>
         <module>x14nmall-product</module>
+        <module>x14nmall-biz</module>
+        <module>x14nmall-payment</module>
+        <module>x14nmall-search</module>
+        <module>x14nmall-leaf</module>
     </modules>
     <packaging>pom</packaging>
 

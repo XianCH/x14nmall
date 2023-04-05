@@ -27,30 +27,16 @@ public class LoginController {
     TokenStore tokenStore;
 
     @PostMapping("/ua/login")
-    @ApiOperation(value = "用户端账号登录",notes = "通过账号登录，还要携带用户的类型，也就是用户所在的系统")
+    @ApiOperation(value = "用户端账号登录", notes = "通过账号登录，还要携带用户的类型，也就是用户所在的系统")
     public ServerResponseEntity<TokenInfoVo> login(
             @Valid @RequestBody AuthenticationDTO authenticationDTO) {
         ServerResponseEntity<UserInfoInTokenBO> userInfoInTokenResponse = authAccountService
                 .getUserInfoInTokenByInputUserNameAndPassword(authenticationDTO.getPrincipal(),
                         authenticationDTO.getCredentials());
-        if (!userInfoInTokenResponse.isSuccess()){
+        if (!userInfoInTokenResponse.isSuccess()) {
             return ServerResponseEntity.transform(userInfoInTokenResponse);
         }
         UserInfoInTokenBO data = userInfoInTokenResponse.getData();
-        /**
-         * 权限（暂时不用）
-         */
-/*
-        ClearUserPermissionsCacheDTO clearUserPermissionsCacheDTO = new ClearUserPermissionsCacheDTO();
-        clearUserPermissionsCacheDTO.setSysType(data.getSysType());
-        clearUserPermissionsCacheDTO.setUserId(data.getUserId());
-        // 将以前的权限清理了,以免权限有缓存
-        ServerResponseEntity<Void> clearResponseEntity = permissionFeignClient.clearUserPermissionsCache(clearUserPermissionsCacheDTO);
-
-        if (!clearResponseEntity.isSuccess()) {
-            return ServerResponseEntity.fail(ResponseEnum.UNAUTHORIZED);
-        }
-*/
 
         return ServerResponseEntity.success(tokenStore.storeAndGetVo(data));
     }

@@ -9,6 +9,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/x14nmall-api-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/x14nmall-api-payment/pom.xml" />
         <option value="$PROJECT_DIR$/x14nmall-common/x14nmall-core/pom.xml" />
       </set>
     </option>
