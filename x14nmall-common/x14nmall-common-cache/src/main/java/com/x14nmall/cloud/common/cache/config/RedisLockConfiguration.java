@@ -5,10 +5,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.integration.redis.util.RedisLockRegistry;
 
+<<<<<<< HEAD
+
+=======
 /**
  * @author FrozenWatermelon
  * @date 2020/12/29
  */
+>>>>>>> develop
 @Configuration
 public class RedisLockConfiguration {
     @Bean

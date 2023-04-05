@@ -1,9 +1,9 @@
 package com.x14nmall.cloud.api.product.vo;
 
-import com.x14nmall.cloud.common.vo.BaseVO;
+import com.x14nmall.cloud.common.core.vo.BaseVO;
 import io.swagger.annotations.ApiModelProperty;
 
-import java.util.List;
+
 
 public class CategoryVO extends BaseVO {
 

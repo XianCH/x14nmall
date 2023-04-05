@@ -8,12 +8,21 @@ import cn.hutool.core.util.StrUtil;
 import com.x14nmall.cloud.api.auth.bo.UserInfoInTokenBO;
 import com.x14nmall.cloud.api.auth.vo.TokenInfoVo;
 import com.x14nmall.cloud.common.cache.constant.CacheNames;
+<<<<<<< HEAD
+import com.x14nmall.cloud.common.core.response.ResponseEnum;
+import com.x14nmall.cloud.common.core.response.ServerResponseEntity;
+import com.x14nmall.cloud.common.security.bo.TokenInfoBO;
+import com.x14nmall.cloud.common.core.util.PrincipalUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+=======
 import com.x14nmall.cloud.common.response.ServerResponseEntity;
 import com.x14nmall.cloud.common.security.bo.TokenInfoBO;
 import com.x14nmall.cloud.common.util.PrincipalUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.commons.util.IdUtils;
+>>>>>>> develop
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -104,6 +113,56 @@ public class TokenStore {
     }
 
     public ServerResponseEntity<UserInfoInTokenBO> getUserInfoByAccessToken(String accessToken, boolean neeDecrypt) {
+<<<<<<< HEAD
+        String realAccessToken = null ;
+        if (StrUtil.isBlank(accessToken)) {
+            return ServerResponseEntity.showFailMsg("accessToken is blank");
+        }
+        //判断是否需要加密
+        if (neeDecrypt) {
+            ServerResponseEntity<String> decryptTokenEntity = decryptToken(accessToken);
+            if (!decryptTokenEntity.isSuccess()) {
+                return ServerResponseEntity.fail(ResponseEnum.SHOW_FAIL);
+            }
+        } else {
+            realAccessToken = accessToken;
+        }
+        UserInfoInTokenBO userInfoInTokenBO = (UserInfoInTokenBO) redisTemplate.opsForValue().get(getAccessKey(realAccessToken));
+
+        if (userInfoInTokenBO == null){
+            return ServerResponseEntity.showFailMsg("Token过期");
+        }
+        return ServerResponseEntity.success(userInfoInTokenBO);
+    }
+
+
+    public TokenInfoVo storeAndGetVo(UserInfoInTokenBO userInfoInTokenBO) {
+        TokenInfoBO tokenInfoBO = storeAccessToken(userInfoInTokenBO);
+        TokenInfoVo tokenInfoVo = new TokenInfoVo();
+        tokenInfoVo.setAccessToken(tokenInfoBO.getAccessToken());
+        tokenInfoVo.setRefreshToken(tokenInfoBO.getRefreshToken());
+        tokenInfoVo.setExpiresIn(tokenInfoBO.getExpireIn());
+        return tokenInfoVo;
+    }
+
+    private ServerResponseEntity<String> decryptToken(String data) {
+        String decryptStr = null;
+        String decryptToken = null;
+        try {
+            decryptStr = Base64.decodeStr(data);
+            decryptToken = decryptStr.substring(0, 32);
+            long createTime = Long.parseLong(decryptStr.substring(32, 45));
+            long second = 1000L;
+            if (System.currentTimeMillis() - createTime > expiresIn) {
+                return ServerResponseEntity.showFailMsg("token格式有误");
+            }
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+        }
+
+        if (!PrincipalUtil.isSimpleChar(decryptToken)) {
+            return ServerResponseEntity.showFailMsg("token格式错误");
+=======
         if (StrUtil.isBlank(accessToken)) {
             return ServerResponseEntity.showFailMsg("accessToken is blank");
         }
@@ -132,10 +191,13 @@ public class TokenStore {
         //防止解密后的token是脚本，从而对redis进行攻击，uuid只能是数字和小写字母
         if (!PrincipalUtil.isSimpleChar(decryptStr)) {
             return ServerResponseEntity.showFailMsg("token格式有误");
+>>>>>>> develop
         }
         return ServerResponseEntity.success(decryptToken);
     }
 
+<<<<<<< HEAD
+=======
 
     public TokenInfoVo storeAndGetVo(UserInfoInTokenBO userInfoInTokenBO){
         TokenInfoBO tokenInfoBO = storeAccessToken(userInfoInTokenBO);
@@ -147,6 +209,7 @@ public class TokenStore {
     }
 
 
+>>>>>>> develop
     private String encryptToken(String accessToken) {
         return Base64.encode(accessToken + System.currentTimeMillis());
     }
