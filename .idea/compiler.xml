@@ -21,7 +21,15 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="x14nmall-api-biz" target="1.8" />
+      <module name="x14nmall-api-leaf" target="1.8" />
+      <module name="x14nmall-api-order" target="1.8" />
+      <module name="x14nmall-api-payment" target="1.8" />
+      <module name="x14nmall-biz" target="1.8" />
       <module name="x14nmall-core" target="1.8" />
+      <module name="x14nmall-leaf" target="1.8" />
+      <module name="x14nmall-payment" target="1.8" />
+      <module name="x14nmall-search" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
