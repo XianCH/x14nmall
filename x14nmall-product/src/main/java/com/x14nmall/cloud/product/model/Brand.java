@@ -1,10 +1,8 @@
 package com.x14nmall.cloud.product.model;
 
-<<<<<<< HEAD
+
 import com.x14nmall.cloud.common.core.model.BaseModel;
-=======
-import com.x14nmall.cloud.common.model.BaseModel;
->>>>>>> develop
+
 
 import java.io.Serializable;
 
