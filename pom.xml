@@ -15,6 +15,7 @@
         <module>x14nmall-order</module>
         <module>x14nmall-user</module>
         <module>x14nmall-product</module>
+        <module>x14nmall-biz</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -72,8 +73,6 @@
             </dependency>
 
             <dependency>
-=======
->>>>>>> develop
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring-cloud-alibaba.version}</version>

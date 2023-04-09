@@ -1,11 +1,10 @@
 package com.x14nmall.cloud.auth.model;
 
 import com.x14nmall.cloud.common.database.annotations.DistributedId;
-<<<<<<< HEAD
+
 import com.x14nmall.cloud.common.core.model.BaseModel;
-=======
-import com.x14nmall.cloud.common.model.BaseModel;
->>>>>>> develop
+
+
 
 public class AuthAccount extends BaseModel {
 

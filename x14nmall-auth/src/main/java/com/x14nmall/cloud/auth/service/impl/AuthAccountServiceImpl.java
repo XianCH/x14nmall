@@ -4,27 +4,19 @@ import cn.hutool.core.util.StrUtil;
 import com.x14nmall.cloud.api.auth.bo.UserInfoInTokenBO;
 import com.x14nmall.cloud.auth.mapper.AuthAccountMapper;
 import com.x14nmall.cloud.auth.service.AuthAccountService;
-<<<<<<< HEAD
+
 import com.x14nmall.cloud.common.core.response.ServerResponseEntity;
 import com.x14nmall.cloud.common.security.bo.AuthAccountInVerifyBO;
 import com.x14nmall.cloud.common.security.constant.InputUserNameEnum;
 import com.x14nmall.cloud.common.core.util.PrincipalUtil;
-=======
-import com.x14nmall.cloud.common.response.ServerResponseEntity;
-import com.x14nmall.cloud.common.security.bo.AuthAccountInVerifyBO;
-import com.x14nmall.cloud.common.security.constant.InputUserNameEnum;
-import com.x14nmall.cloud.common.util.PrincipalUtil;
->>>>>>> develop
+
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-<<<<<<< HEAD
-=======
-import javax.annotation.Resource;
 
->>>>>>> develop
+
 
 @Service
 public class AuthAccountServiceImpl implements AuthAccountService {

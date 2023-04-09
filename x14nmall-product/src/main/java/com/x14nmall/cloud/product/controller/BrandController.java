@@ -6,7 +6,7 @@ import com.x14nmall.cloud.common.database.dto.PageDTO;
 import com.x14nmall.cloud.common.database.vo.PageVO;
 import com.x14nmall.cloud.common.core.response.ServerResponseEntity;
 import com.x14nmall.cloud.product.dto.BrandDTO;
-import com.x14nmall.cloud.product.vo.service.BrandService;
+import com.x14nmall.cloud.product.service.BrandService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
@@ -34,11 +34,11 @@ public class BrandController {
             return ServerResponseEntity.success(brandPage);
     }
 
-    @GetMapping("/allBrand")
-    @ApiModelProperty(value = "获取所有品牌列表")
-    public ServerResponseEntity<List<BrandVO>> AllBrand(){
-        return ServerResponseEntity.success(brandService.allBrand());
-    }
+//    @GetMapping("/allBrand")
+//    @ApiModelProperty(value = "获取所有品牌列表")
+//    public ServerResponseEntity<List<BrandVO>> AllBrand(){
+//        return ServerResponseEntity.success(brandService.allBrand());
+//    }
 
 
 

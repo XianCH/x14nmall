@@ -2,7 +2,9 @@ D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\
 D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\AuthApplication.java
 D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\dto\AuthenticationDTO.java
 D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\model\AuthAccount.java
+D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\config\SwaggerConfiguration.java
 D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\service\AuthAccountService.java
 D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\manager\TokenStore.java
 D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\mapper\AuthAccountMapper.java
+D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\fegin\TokenFeignController.java
 D:\2 -- development\project\ideaProject\cloudProject\x14nmall\x14nmall-auth\src\main\java\com\x14nmall\cloud\auth\controller\LoginController.java
