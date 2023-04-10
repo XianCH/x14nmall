@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController("adminProductController")
-@RequestMapping("/product")
+@RequestMapping("/admin/product")
 public class ProductController {
 
     /**

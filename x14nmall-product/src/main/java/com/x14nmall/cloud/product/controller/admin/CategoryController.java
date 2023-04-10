@@ -7,4 +7,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController("adminCategoryController")
 @RequestMapping("/category")
 public class CategoryController {
+
 }

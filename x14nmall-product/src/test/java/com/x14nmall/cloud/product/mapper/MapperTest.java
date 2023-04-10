@@ -1,6 +1,6 @@
 package com.x14nmall.cloud.product.mapper;
 
-import com.x14nmall.cloud.api.product.vo.BrandVO;
+
 import com.x14nmall.cloud.product.ProductApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

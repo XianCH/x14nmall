@@ -16,15 +16,13 @@ public class BrandDTO {
     private String brandName;
 
 
-//    @NotNull(message = "图片不能为空")
+    @NotNull(message = "图片不能为空")
     @ApiModelProperty("品牌图片")
     private String imgUrl;
 
-//    @NotNull(message = "搜索首字母不能为空")
-    @NotNull(message = "搜索首字母不能为空")
+    @ApiModelProperty("商品描述")
+    private String desc;
 
-    @ApiModelProperty("搜索首字母")
-    private String firstLetter;
 
 
     public Long getBrandId() {
@@ -51,13 +49,6 @@ public class BrandDTO {
         this.imgUrl = imgUrl;
     }
 
-    public String getFirstLetter() {
-        return firstLetter;
-    }
-
-    public void setFirstLetter(String firstLetter) {
-        this.firstLetter = firstLetter;
-    }
 
     @Override
     public String toString() {
@@ -65,7 +56,6 @@ public class BrandDTO {
                 "brandId=" + brandId +
                 ", brandName='" + brandName + '\'' +
                 ", imgUrl='" + imgUrl + '\'' +
-                ", firstLetter='" + firstLetter + '\'' +
                 '}';
     }
 }

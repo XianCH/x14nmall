@@ -35,6 +35,10 @@
             <artifactId>x14nmall-common-core</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -65,5 +65,12 @@ public class DefaultExceptionHandlerConfig {
         return ResponseEntity.badRequest().body(ServerResponseEntity.fail(ResponseEnum.INVALID_REQUEST_PARAMETER, errorMessage));
     }
 
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ServerResponseEntity<Object>> exceptionHandler(Exception e) {
+        logger.error("exceptionHandler",e);
+        return ResponseEntity.status(HttpStatus.OK).body(ServerResponseEntity.fail(ResponseEnum.EXCEPTION));
+    }
+
+
 }
 

@@ -1,12 +1,13 @@
 package com.x14nmall.cloud.product.controller;
 
 
-import com.x14nmall.cloud.api.product.vo.BrandVO;
+
 import com.x14nmall.cloud.common.database.dto.PageDTO;
 import com.x14nmall.cloud.common.database.vo.PageVO;
 import com.x14nmall.cloud.common.core.response.ServerResponseEntity;
 import com.x14nmall.cloud.product.dto.BrandDTO;
 import com.x14nmall.cloud.product.service.BrandService;
+import com.x14nmall.cloud.product.vo.BrandVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
