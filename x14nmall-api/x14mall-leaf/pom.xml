@@ -3,23 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>x14nmall</artifactId>
+        <artifactId>x14nmall-api</artifactId>
         <groupId>com.x14nmall.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>x14nmall-api</artifactId>
-    <packaging>pom</packaging>
-    <description>x14nmall内网接口</description>
+    <artifactId>x14mall-leaf</artifactId>
+    <packaging>jar</packaging>
 
-    <modules>
-        <module>x14nmall-api-auth</module>
-        <module>x14nmall-api-product</module>
-        <module>x14mall-leaf</module>
-
-    </modules>
-
-
-
+    <dependencies>
+        <dependency>
+            <groupId>com.x14nmall.cloud</groupId>
+            <artifactId>x14nmall-common-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

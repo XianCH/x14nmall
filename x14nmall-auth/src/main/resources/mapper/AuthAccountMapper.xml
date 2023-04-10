@@ -6,7 +6,7 @@
 
 
     <resultMap id="BaseResultMap" type="com.x14nmall.cloud.auth.model.AuthAccount">
-        <id column="uid" property="uid"/>
+        <id column="user_id" property="userId"/>
         <result column="create_time" property="createTime"/>
         <result column="update_time" property="updateTime"/>
         <result column="username" property="username"/>
@@ -16,7 +16,7 @@
     </resultMap>
 
     <select id="getAuthAccountInVerifyByInputUserName" resultType="com.x14nmall.cloud.common.security.bo.AuthAccountInVerifyBO">
-        select user_id,uid,password, status from auth_account
+        select user_id,password, status from auth_account
         where status != -1
         <if test="inputUserNameType == 1">
             and username = #{inputUserName}

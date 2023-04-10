@@ -8,8 +8,8 @@ import com.x14nmall.cloud.common.core.model.BaseModel;
 
 public class AuthAccount extends BaseModel {
 
-    @DistributedId("x14nmall-auth-account")
-    private Long uid;
+
+    private Long userId;
 
     private String username;
 
@@ -19,20 +19,11 @@ public class AuthAccount extends BaseModel {
 
     private Integer status;
 
-    private Long userId;
 
 
     /*private Integer sysType;*/
     /*private Long tenantId;*/
     /*private Integer isAdmin*/
-
-    public Long getUid() {
-        return uid;
-    }
-
-    public void setUid(Long uid) {
-        this.uid = uid;
-    }
 
     public String getUsername() {
         return username;

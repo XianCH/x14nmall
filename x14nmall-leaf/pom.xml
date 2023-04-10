@@ -9,14 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>x14nmall-user</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <artifactId>x14nmall-leaf</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.x14nmall.cloud</groupId>
+            <artifactId>x14nmall-common-database</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--注册中心客户端-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
@@ -29,22 +30,7 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.x14nmall.cloud</groupId>
-            <artifactId>x14nmall-common-database</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.x14nmall.cloud</groupId>
-            <artifactId>x14nmall-api-auth</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.x14nmall.cloud</groupId>
-            <artifactId>x14nmall-common-security</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
     </dependencies>
+
 
 </project>
