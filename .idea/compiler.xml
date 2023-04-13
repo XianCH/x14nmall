@@ -13,10 +13,10 @@
         <module name="x14nmall-user" />
         <module name="x14nmall-common-database" />
         <module name="x14nmall-api-product" />
+        <module name="x14nmall-api-leaf" />
         <module name="x14nmall-gateway" />
         <module name="x14nmall-auth" />
         <module name="x14nmall-common-order" />
-        <module name="x14nmall-leaf" />
         <module name="x14mall-leaf" />
         <module name="x14nmall-order" />
         <module name="x14nmall-common-cache" />
@@ -25,7 +25,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="x14nmall-api-biz" target="1.8" />
-      <module name="x14nmall-api-leaf" target="1.8" />
       <module name="x14nmall-api-order" target="1.8" />
       <module name="x14nmall-api-payment" target="1.8" />
       <module name="x14nmall-api-security" target="1.8" />

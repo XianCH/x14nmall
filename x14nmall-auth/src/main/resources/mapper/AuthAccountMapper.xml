@@ -23,4 +23,12 @@
         </if>    </select>
 
 
+    <select id="getUserByUserName" resultType="com.x14nmall.cloud.api.auth.vo.AuthAccountVO">
+        select user_id ,username from auth_account where status != 1
+        <if test="userName != null and userName != ''">
+            and username = #{userName}
+        </if>
+    </select>
+
+
 </mapper>
