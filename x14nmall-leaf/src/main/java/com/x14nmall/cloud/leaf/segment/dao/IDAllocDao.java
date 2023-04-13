@@ -12,7 +12,7 @@ import java.util.List;
 public interface IDAllocDao {
 
 	/**
-	 * com.mall4j.cloud.leaf.segment.dao.IDAllocMapper.getAllLeafAllocs
+	 * com.x14nmall.cloud.leaf.segment.dao.IDAllocMapper.getAllLeafAllocs
 	 * @return List<LeafAlloc>
 	 */
 	List<LeafAlloc> getAllLeafAllocs();
