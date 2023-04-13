@@ -16,10 +16,9 @@
     <modules>
         <module>x14nmall-api-auth</module>
         <module>x14nmall-api-product</module>
-        <module>x14mall-leaf</module>
+
 
     </modules>
-
 
 
 </project>

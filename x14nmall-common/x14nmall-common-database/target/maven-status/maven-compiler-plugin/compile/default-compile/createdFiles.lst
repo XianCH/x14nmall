@@ -1,5 +1,0 @@
-com\x14nmall\cloud\common\database\annotations\DistributedId.class
-com\x14nmall\cloud\common\database\util\PageUtil.class
-com\x14nmall\cloud\common\database\dto\PageDTO.class
-com\x14nmall\cloud\common\database\config\MybatisConfig.class
-com\x14nmall\cloud\common\database\vo\PageVO.class
