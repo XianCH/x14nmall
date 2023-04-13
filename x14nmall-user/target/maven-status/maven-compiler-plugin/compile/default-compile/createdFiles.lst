@@ -1,0 +1,7 @@
+com\x14nmall\cloud\user\model\User.class
+com\x14nmall\cloud\user\service\impl\UserServiceImpl.class
+com\x14nmall\cloud\user\controller\UserController.class
+com\x14nmall\cloud\user\dto\UserRegisterDTO.class
+com\x14nmall\cloud\user\UserApplication.class
+com\x14nmall\cloud\user\controller\UserRegisterController.class
+com\x14nmall\cloud\user\service\UserService.class

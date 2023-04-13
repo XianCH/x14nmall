@@ -17,6 +17,7 @@
         <module name="x14nmall-gateway" />
         <module name="x14nmall-auth" />
         <module name="x14nmall-common-order" />
+        <module name="x14nmall-leaf" />
         <module name="x14nmall-order" />
         <module name="x14nmall-common-cache" />
         <module name="x14nmall-common-core" />

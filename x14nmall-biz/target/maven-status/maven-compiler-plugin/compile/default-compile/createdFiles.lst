@@ -1,0 +1,6 @@
+com\x14nmall\cloud\biz\config\SwaggerConfiguration.class
+com\x14nmall\cloud\biz\vo\OssVO.class
+com\x14nmall\cloud\biz\config\OssConfig.class
+com\x14nmall\cloud\biz\BizApplication.class
+com\x14nmall\cloud\biz\config\MinioTemplate.class
+com\x14nmall\cloud\biz\controller\OssController.class

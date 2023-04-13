@@ -1,0 +1,3 @@
+com\x14nmall\cloud\gateway\GatewayApplication.class
+com\x14nmall\cloud\gateway\config\SwaggerResourceConfig.class
+com\x14nmall\cloud\gateway\handler\SwaggerHandler.class

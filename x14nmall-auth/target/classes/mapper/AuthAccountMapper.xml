@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.x14nmall.cloud.auth.mapper.AuthAccountMapper">
+
+
+    <resultMap id="BaseResultMap" type="com.x14nmall.cloud.auth.model.AuthAccount">
+        <id column="user_id" property="userId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="create_ip" property="createIP"/>
+        <result column="status" property="status"/>
+    </resultMap>
+
+    <select id="getAuthAccountInVerifyByInputUserName" resultType="com.x14nmall.cloud.common.security.bo.AuthAccountInVerifyBO">
+        select user_id,password, status from auth_account
+        where status != -1
+        <if test="inputUserNameType == 1">
+            and username = #{inputUserName}
+        </if>    </select>
+
+
+    <select id="getUserByUserName" resultType="com.x14nmall.cloud.api.auth.vo.AuthAccountVO">
+        select user_id ,username from auth_account where status != 1
+        <if test="userName != null and userName != ''">
+            and username = #{userName}
+        </if>
+    </select>
+
+
+</mapper>
